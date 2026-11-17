@@ -1,0 +1,64 @@
+{
+  "id": "freiangler-limmat",
+  "name": "Limmat (Freiangler)",
+  "typ": "Fluss",
+  "kantone": [
+    "ag"
+  ],
+  "zugang": "Freianglerkarte (CHF 50) der kantonalen Fischereiverwaltung, ab 12 Jahren mit Sachkundenachweis. Gilt nur auf den festgelegten Abschnitten, ausser Privatfischenzen. Übrige Strecken sind Pachtreviere.",
+  "erfasst": false,
+  "nurVerweis": false,
+  "verweis": null,
+  "hinweise": [
+    {
+      "text": "Abschnitt F: ZH-Grenze bis Aare-Mündung",
+      "quelle": {
+        "titel": "Freianglerrecht Kanton Aargau",
+        "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
+        "stand": "2026-11-17"
+      }
+    }
+  ],
+  "koederRegeln": [
+    {
+      "text": "Nur vom Ufer aus, Waten ist verboten.",
+      "quelle": {
+        "titel": "Freianglerrecht Kanton Aargau",
+        "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
+        "stand": "2026-11-17"
+      }
+    },
+    {
+      "text": "Eine Rute mit einer Schnur (mit oder ohne Schwimmer), einfache Angel, natürlicher Köder.",
+      "quelle": {
+        "titel": "Freianglerrecht Kanton Aargau",
+        "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
+        "stand": "2026-11-17"
+      }
+    },
+    {
+      "text": "Verboten: Köderfische, künstliche Köder und Anfüttern.",
+      "quelle": {
+        "titel": "Freianglerrecht Kanton Aargau",
+        "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
+        "stand": "2026-11-17"
+      }
+    },
+    {
+      "text": "Erlaubt vom 1. März bis 31. Oktober, täglich 5–23 Uhr.",
+      "quelle": {
+        "titel": "Freianglerrecht Kanton Aargau",
+        "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
+        "stand": "2026-11-17"
+      }
+    }
+  ],
+  "artRegeln": [],
+  "quellen": [
+    {
+      "titel": "Freianglerrecht Kanton Aargau",
+      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
+      "stand": "2026-11-17"
+    }
+  ]
+}

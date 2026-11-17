@@ -1,0 +1,33 @@
+{
+  "id": "hallwilersee",
+  "name": "Hallwilersee",
+  "typ": "See",
+  "kantone": [
+    "ag",
+    "lu"
+  ],
+  "zugang": "Wird nicht verpachtet. Hallwilerseekarte für Inhaber eines Sachkundenachweises. Zusätzlich gilt am ganzen Aargauer Ufer das Freianglerrecht (Abschnitt J).",
+  "erfasst": false,
+  "nurVerweis": false,
+  "verweis": null,
+  "hinweise": [],
+  "koederRegeln": [],
+  "artRegeln": [],
+  "quellen": [
+    {
+      "titel": "Übereinkunft Hallwilersee 2021 (AG/LU)",
+      "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+      "stand": null
+    },
+    {
+      "titel": "Angeln im Kanton Aargau",
+      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
+      "stand": "2026-11-17"
+    },
+    {
+      "titel": "Freianglerrecht Kanton Aargau",
+      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
+      "stand": "2026-11-17"
+    }
+  ]
+}

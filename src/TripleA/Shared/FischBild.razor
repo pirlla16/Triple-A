@@ -1,0 +1,19 @@
+@* Zeigt das Bild einer Art oder einen neutralen Platzhalter, solange noch kein Bild erfasst ist. *@
+
+@if (!string.IsNullOrWhiteSpace(Art?.Bild))
+{
+    <img src="@Art.Bild" alt="@Art.Name" class="@Klasse" loading="lazy" />
+}
+else
+{
+    <svg viewBox="0 0 120 60" class="@Klasse platzhalter" role="img" aria-label="Noch kein Bild">
+        <path d="M10 30 C30 12 70 10 90 26 L112 12 L104 30 L112 48 L90 34 C70 50 30 48 10 30 Z"
+              fill="#cfe9f6" stroke="#7fb9d6" stroke-width="2" stroke-linejoin="round" />
+        <circle cx="28" cy="27" r="3" fill="#7fb9d6" />
+    </svg>
+}
+
+@code {
+    [Parameter] public Art? Art { get; set; }
+    [Parameter] public string Klasse { get; set; } = "fischbild";
+}

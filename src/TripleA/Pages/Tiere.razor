@@ -1,0 +1,55 @@
+@page "/tiere"
+@inject DatenService Daten
+
+<PageTitle>Triple A – Tiere</PageTitle>
+
+<h1 class="seitentitel">Tiere</h1>
+
+<input class="suche" type="search" placeholder="Art suchen …" @bind="suche" @bind:event="oninput" />
+
+@if (arten is null)
+{
+    <p class="laden">Daten werden geladen …</p>
+}
+else
+{
+    var treffer = Gefiltert().ToList();
+    if (treffer.Count == 0)
+    {
+        <p class="leer">Keine Art gefunden.</p>
+    }
+    <ul class="artenliste">
+        @foreach (var art in treffer)
+        {
+            <li>
+                <a class="art-eintrag" href="@($"tiere/{art.Id}")">
+                    <FischBild Art="art" Klasse="fischbild-klein" />
+                    <span class="art-text">
+                        <span class="art-name">@art.Name</span>
+                        <span class="art-info">@art.Familie@(string.IsNullOrWhiteSpace(art.Herkunft) ? "" : $" · {art.Herkunft}")</span>
+                    </span>
+                </a>
+            </li>
+        }
+    </ul>
+}
+
+<Fusszeile />
+
+@code {
+    private List<Art>? arten;
+    private string suche = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        arten = await Daten.GetArtenAsync();
+    }
+
+    private IEnumerable<Art> Gefiltert()
+    {
+        if (arten is null) return Enumerable.Empty<Art>();
+        if (string.IsNullOrWhiteSpace(suche)) return arten;
+        var s = DatenService.SortierText(suche.Trim());
+        return arten.Where(a => DatenService.SortierText(a.Name).Contains(s));
+    }
+}

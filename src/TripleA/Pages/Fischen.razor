@@ -1,0 +1,283 @@
+@page "/"
+@inject DatenService Daten
+@inject Einstellungen Einst
+
+<PageTitle>Triple A – Fischen</PageTitle>
+
+<h1 class="seitentitel">Fischen</h1>
+
+@if (fehler is not null)
+{
+    <div class="karte warnung">@fehler</div>
+}
+else if (kantonListe is null)
+{
+    <p class="laden">Daten werden geladen …</p>
+}
+else
+{
+    <section class="karte">
+        <h2>Kanton</h2>
+        <div class="chips">
+            @foreach (var k in kantonListe)
+            {
+                <button type="button" class="chip @(k.Id == kanton?.Id ? "aktiv" : "")" @onclick="() => KantonWaehlenAsync(k.Id)">
+                    @k.Name
+                </button>
+            }
+        </div>
+
+        @if (kanton is not null && gewaesserListe.Count > 0)
+        {
+            <label class="feld-label" for="gewaesser">Gewässer</label>
+            <select id="gewaesser" class="auswahl" value="@(gewaesser?.Id ?? "")" @onchange="GewaesserGeaendertAsync">
+                <option value="">– Gewässer wählen –</option>
+                @foreach (var g in gewaesserListe)
+                {
+                    <option value="@g.Id">@g.Name</option>
+                }
+            </select>
+        }
+    </section>
+
+    @if (kanton is not null)
+    {
+        <section class="karte">
+            <h2>Zugang im Kanton @kanton.Name</h2>
+            @if (!string.IsNullOrWhiteSpace(kanton.System))
+            {
+                <p><strong>@kanton.System</strong></p>
+            }
+            @if (!string.IsNullOrWhiteSpace(kanton.Zugang))
+            {
+                <p>@kanton.Zugang</p>
+            }
+            <RegelListe Regeln="kanton.Hinweise" />
+        </section>
+
+        @if (gewaesser is null)
+        {
+            <p class="hinweis">Wähle ein Gewässer, um die geltenden Regeln zu sehen.</p>
+        }
+        else if (gewaesser.NurVerweis)
+        {
+            <section class="karte">
+                <h2>@gewaesser.Name</h2>
+                @if (!string.IsNullOrWhiteSpace(gewaesser.Zugang))
+                {
+                    <p>@gewaesser.Zugang</p>
+                }
+                <RegelListe Regeln="gewaesser.Hinweise" />
+                @if (gewaesser.Verweis is not null)
+                {
+                    <p>
+                        @if (!string.IsNullOrWhiteSpace(gewaesser.Verweis.Url))
+                        {
+                            <a href="@gewaesser.Verweis.Url" target="_blank" rel="noopener">@gewaesser.Verweis.Titel</a>
+                        }
+                        else
+                        {
+                            @gewaesser.Verweis.Titel
+                        }
+                    </p>
+                }
+            </section>
+        }
+        else
+        {
+            if (!kanton.Erfasst || !gewaesser.Erfasst)
+            {
+                <div class="karte warnung">
+                    Die Regeln für dieses Gewässer sind noch nicht vollständig erfasst.
+                    Bitte die offiziellen Vorschriften beachten (Links unten).
+                </div>
+            }
+
+            <section class="karte">
+                <h2>@gewaesser.Name</h2>
+                @if (!string.IsNullOrWhiteSpace(gewaesser.Zugang))
+                {
+                    <p>@gewaesser.Zugang</p>
+                }
+                <RegelListe Regeln="gewaesser.Hinweise" />
+            </section>
+
+            <section class="karte">
+                <h2>Köder und Hilfsmittel</h2>
+                @if (bund is not null && bund.AllgemeineRegeln.Count + kanton.KoederRegeln.Count + gewaesser.KoederRegeln.Count == 0)
+                {
+                    <p class="leer">Noch keine Angaben erfasst.</p>
+                }
+                <RegelListe Regeln="bund?.AllgemeineRegeln" Ebene="Bund" />
+                <RegelListe Regeln="kanton.KoederRegeln" Ebene="Kanton" />
+                <RegelListe Regeln="gewaesser.KoederRegeln" Ebene="Gewässer" />
+            </section>
+
+            <section class="karte">
+                <h2>Schonmasse und Schonzeiten</h2>
+                @if (mitAngaben.Count == 0)
+                {
+                    <p class="leer">Noch keine Angaben erfasst.</p>
+                }
+                else
+                {
+                    <table class="tabelle">
+                        <thead>
+                            <tr><th>Art</th><th>Schonmass</th><th>Schonzeit</th><th>Limite/Tag</th></tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var e in mitAngaben)
+                            {
+                                <tr>
+                                    <td><a href="@($"tiere/{e.Art.Id}")">@e.Art.Name</a></td>
+                                    <td>@(e.Regel.SchonmassCm is int cm ? $"{cm} cm" : "–")</td>
+                                    <td>
+                                        @if (e.Regel.GanzjaehrigGeschont == true)
+                                        {
+                                            <span class="geschuetzt">ganzjährig</span>
+                                        }
+                                        else if (e.Regel.SchonzeitVon is not null)
+                                        {
+                                            @($"{DatenService.Datum(e.Regel.SchonzeitVon)}–{DatenService.Datum(e.Regel.SchonzeitBis)}")
+                                        }
+                                        else
+                                        {
+                                            @("–")
+                                        }
+                                    </td>
+                                    <td>@(e.Regel.FangLimiteProTag?.ToString() ?? "–")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+            </section>
+
+            <section class="karte">
+                <h2>Geschützte Arten</h2>
+                @if (geschuetzt.Count == 0)
+                {
+                    <p class="leer">Noch keine Angaben erfasst.</p>
+                }
+                else
+                {
+                    <ul class="regelliste">
+                        @foreach (var e in geschuetzt)
+                        {
+                            <li><a href="@($"tiere/{e.Art.Id}")">@e.Art.Name</a> @(e.Regel.Bemerkung)</li>
+                        }
+                    </ul>
+                }
+            </section>
+        }
+
+        <section class="karte">
+            <h2>Quellen</h2>
+            <ul class="regelliste">
+                @foreach (var q in Quellen())
+                {
+                    <li>
+                        @if (!string.IsNullOrWhiteSpace(q.Url))
+                        {
+                            <a href="@q.Url" target="_blank" rel="noopener">@q.Titel</a>
+                        }
+                        else
+                        {
+                            @q.Titel
+                        }
+                        @if (!string.IsNullOrWhiteSpace(q.Stand))
+                        {
+                            <span class="stand"> (Stand @q.Stand)</span>
+                        }
+                    </li>
+                }
+            </ul>
+        </section>
+    }
+}
+
+<Fusszeile />
+
+@code {
+    private List<KantonEintrag>? kantonListe;
+    private Bund? bund;
+    private Kanton? kanton;
+    private List<Gewaesser> gewaesserListe = new();
+    private Gewaesser? gewaesser;
+    private List<EffektiveArtRegel> mitAngaben = new();
+    private List<EffektiveArtRegel> geschuetzt = new();
+    private string? fehler;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            kantonListe = await Daten.GetKantonListeAsync();
+            bund = await Daten.GetBundAsync();
+
+            var gespeicherterKanton = await Einst.LesenAsync(Einstellungen.KantonSchluessel);
+            if (!string.IsNullOrEmpty(gespeicherterKanton) && kantonListe.Any(k => k.Id == gespeicherterKanton))
+            {
+                await LadeKantonAsync(gespeicherterKanton);
+                var gespeichertesGewaesser = await Einst.LesenAsync(Einstellungen.GewaesserSchluessel);
+                if (!string.IsNullOrEmpty(gespeichertesGewaesser))
+                    await LadeGewaesserAsync(gespeichertesGewaesser);
+            }
+        }
+        catch (Exception ex)
+        {
+            fehler = $"Die Daten konnten nicht geladen werden ({ex.Message}).";
+        }
+    }
+
+    private async Task KantonWaehlenAsync(string id)
+    {
+        if (kanton?.Id == id) return;
+        await Einst.SchreibenAsync(Einstellungen.KantonSchluessel, id);
+        await Einst.SchreibenAsync(Einstellungen.GewaesserSchluessel, null);
+        await LadeKantonAsync(id);
+    }
+
+    private async Task LadeKantonAsync(string id)
+    {
+        kanton = await Daten.GetKantonAsync(id);
+        gewaesserListe = kanton is null ? new() : await Daten.GetGewaesserVonKantonAsync(kanton);
+        gewaesser = null;
+        await BerechneRegelnAsync();
+    }
+
+    private async Task GewaesserGeaendertAsync(ChangeEventArgs e)
+    {
+        var id = e.Value?.ToString();
+        await Einst.SchreibenAsync(Einstellungen.GewaesserSchluessel, id);
+        await LadeGewaesserAsync(id);
+    }
+
+    private async Task LadeGewaesserAsync(string? id)
+    {
+        gewaesser = string.IsNullOrEmpty(id) ? null : gewaesserListe.FirstOrDefault(g => g.Id == id);
+        await BerechneRegelnAsync();
+    }
+
+    private async Task BerechneRegelnAsync()
+    {
+        if (kanton is null || gewaesser is null || gewaesser.NurVerweis)
+        {
+            mitAngaben = new();
+            geschuetzt = new();
+            return;
+        }
+        var alle = await Daten.GetEffektiveRegelnAsync(kanton, gewaesser);
+        mitAngaben = alle.Where(e => e.HatAngaben).ToList();
+        geschuetzt = alle.Where(e => e.Regel.GanzjaehrigGeschont == true).ToList();
+    }
+
+    private IEnumerable<Quelle> Quellen()
+    {
+        var liste = new List<Quelle>();
+        if (bund is not null) liste.AddRange(bund.Quellen);
+        if (kanton is not null) liste.AddRange(kanton.Quellen);
+        if (gewaesser is not null) liste.AddRange(gewaesser.Quellen);
+        return liste.GroupBy(q => q.Url ?? q.Titel).Select(g => g.First());
+    }
+}

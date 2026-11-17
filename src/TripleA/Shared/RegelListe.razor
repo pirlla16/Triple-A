@@ -1,0 +1,26 @@
+@* Liste von Text-Regeln mit Herkunft (Bund / Kanton / Gewässer) und Quelle. *@
+
+@if (Regeln is not null && Regeln.Count > 0)
+{
+    <ul class="regelliste">
+        @foreach (var r in Regeln)
+        {
+            <li>
+                @if (!string.IsNullOrWhiteSpace(Ebene))
+                {
+                    <span class="ebene">@Ebene</span>
+                }
+                @r.Text
+                @if (r.Quelle is not null && !string.IsNullOrWhiteSpace(r.Quelle.Url))
+                {
+                    <a class="quelle-link" href="@r.Quelle.Url" target="_blank" rel="noopener">Quelle</a>
+                }
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    [Parameter] public List<Regel>? Regeln { get; set; }
+    [Parameter] public string? Ebene { get; set; }
+}

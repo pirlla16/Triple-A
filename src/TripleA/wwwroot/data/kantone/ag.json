@@ -1,0 +1,36 @@
+{
+  "id": "ag",
+  "name": "Aargau",
+  "kuerzel": "AG",
+  "system": "Pachtreviere mit Fischerkarten, dazu Hallwilerseekarte und Freianglerkarte",
+  "zugang": "Nötig sind der Sachkundenachweis (SaNa) und eine Fischerkarte. Gefangene Fische werden in der Fangstatistik erfasst und am Jahresende eingereicht.",
+  "erfasst": false,
+  "hinweise": [],
+  "koederRegeln": [],
+  "artRegeln": [],
+  "gewaesserIds": [
+    "hallwilersee",
+    "freiangler-aare",
+    "freiangler-reuss",
+    "freiangler-limmat",
+    "freiangler-rhein",
+    "pachtreviere-ag"
+  ],
+  "quellen": [
+    {
+      "titel": "Angeln im Kanton Aargau",
+      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
+      "stand": "2026-11-17"
+    },
+    {
+      "titel": "Freianglerrecht Kanton Aargau",
+      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
+      "stand": "2026-11-17"
+    },
+    {
+      "titel": "Verordnung zum Fischereigesetz des Kantons Aargau (SAR 935.211)",
+      "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+      "stand": null
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "vierwaldstaettersee",
+  "name": "Vierwaldstättersee",
+  "typ": "See",
+  "kantone": [
+    "lu"
+  ],
+  "zugang": "Patent nach dem Konkordat der Anrainerkantone.",
+  "erfasst": false,
+  "nurVerweis": false,
+  "verweis": null,
+  "hinweise": [],
+  "koederRegeln": [],
+  "artRegeln": [],
+  "quellen": [
+    {
+      "titel": "Kantonale Fischereiverordnung Luzern",
+      "url": "https://srl.lu.ch/frontend/versions/427/download_pdf_file?locale=de",
+      "stand": null
+    },
+    {
+      "titel": "Patentausgabestellen Kanton Luzern",
+      "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/vz/vz_fischerei_patentausgabestellen.pdf",
+      "stand": null
+    }
+  ]
+}

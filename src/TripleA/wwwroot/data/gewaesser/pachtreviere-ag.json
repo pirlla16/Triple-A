@@ -1,0 +1,26 @@
+{
+  "id": "pachtreviere-ag",
+  "name": "Übrige Flüsse und Bäche (Pachtreviere)",
+  "typ": "Fluss",
+  "kantone": [
+    "ag"
+  ],
+  "zugang": "Diese Strecken sind verpachtet. Die Fischerkarte gibt es beim jeweiligen Pächter, dort gelten auch zusätzliche Revierregeln.",
+  "erfasst": true,
+  "nurVerweis": true,
+  "verweis": {
+    "titel": "Fischereirevierkarten und Pächter (Kanton Aargau)",
+    "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
+    "stand": "2026-11-17"
+  },
+  "hinweise": [],
+  "koederRegeln": [],
+  "artRegeln": [],
+  "quellen": [
+    {
+      "titel": "Angeln im Kanton Aargau",
+      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
+      "stand": "2026-11-17"
+    }
+  ]
+}

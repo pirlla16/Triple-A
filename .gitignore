@@ -1,0 +1,17 @@
+# Build-Ausgaben
+bin/
+obj/
+publish/
+
+# Visual Studio / VS Code
+.vs/
+*.user
+*.suo
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# System
+.DS_Store
+Thumbs.db

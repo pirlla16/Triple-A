@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#8fd0ef" />
+    <title>Triple A</title>
+    <!-- Basis-Pfad: lokal "/", auf GitHub Pages "/Triple-A/". Wird hier im Browser gesetzt,
+         damit index.html beim Veröffentlichen nicht verändert werden muss (Offline-Cache bleibt gültig). -->
+    <script>
+        (function () {
+            var basis = location.pathname.toLowerCase().indexOf('/triple-a/') === 0 ? '/Triple-A/' : '/';
+            document.write('<base href="' + basis + '" />');
+        })();
+    </script>
+    <link rel="preload" id="webassembly" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link href="manifest.webmanifest" rel="manifest" />
+    <link rel="icon" type="image/png" href="icon-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <script type="importmap"></script>
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        Es ist ein Fehler aufgetreten.
+        <a href="." class="reload">Neu laden</a>
+        <span class="dismiss">×</span>
+    </div>
+    <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+@inject DatenService Daten
+
+<footer class="fusszeile">
+    <p>
+        Ohne Gewähr. Massgebend sind die offiziellen Vorschriften von Bund und Kanton.
+        @if (meta is not null && !string.IsNullOrWhiteSpace(meta.Stand))
+        {
+            <span>Datenstand: @meta.Stand (Version @meta.Version).</span>
+        }
+    </p>
+</footer>
+
+@code {
+    private Meta? meta;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try { meta = await Daten.GetMetaAsync(); }
+        catch { meta = null; }
+    }
+}

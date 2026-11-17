@@ -1,0 +1,104 @@
+@page "/tiere/{Id}"
+@inject DatenService Daten
+@inject Einstellungen Einst
+
+<PageTitle>Triple A – @(art?.Name ?? "Art")</PageTitle>
+
+<a class="zurueck" href="tiere">‹ Alle Arten</a>
+
+@if (geladen && art is null)
+{
+    <p class="leer">Diese Art gibt es im Lexikon nicht.</p>
+}
+else if (art is not null)
+{
+    <h1 class="seitentitel">@art.Name</h1>
+
+    <FischBild Art="art" Klasse="fischbild-gross" />
+    @if (!string.IsNullOrWhiteSpace(art.BildQuelle))
+    {
+        <p class="bildquelle">Bild: @art.BildQuelle</p>
+    }
+
+    @if (kanton is not null && regel is not null)
+    {
+        <section class="karte">
+            <h2>Im Kanton @kanton.Name</h2>
+            @if (!regel.HatAngaben)
+            {
+                <p class="leer">Noch keine Angaben erfasst.</p>
+            }
+            else
+            {
+                <dl class="angaben">
+                    @if (regel.Regel.GanzjaehrigGeschont == true)
+                    {
+                        <dt>Schutz</dt><dd><span class="geschuetzt">ganzjährig geschont</span></dd>
+                    }
+                    @if (regel.Regel.SchonmassCm is int cm)
+                    {
+                        <dt>Schonmass</dt><dd>@cm cm</dd>
+                    }
+                    @if (regel.Regel.SchonzeitVon is not null)
+                    {
+                        <dt>Schonzeit</dt><dd>@DatenService.Datum(regel.Regel.SchonzeitVon)–@DatenService.Datum(regel.Regel.SchonzeitBis)</dd>
+                    }
+                    @if (regel.Regel.FangLimiteProTag is int limite)
+                    {
+                        <dt>Fanglimite</dt><dd>@limite pro Tag</dd>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(regel.Regel.Bemerkung))
+                    {
+                        <dt>Bemerkung</dt><dd>@regel.Regel.Bemerkung</dd>
+                    }
+                </dl>
+                <p class="stand">Einzelne Gewässer können abweichen, siehe Reiter «Fischen».</p>
+            }
+        </section>
+    }
+
+    <section class="karte">
+        <dl class="angaben">
+            <dt>Familie</dt><dd>@Wert(art.Familie)</dd>
+            <dt>Herkunft</dt><dd>@Wert(art.Herkunft)</dd>
+            <dt>Merkmale</dt><dd>@Wert(art.Merkmale)</dd>
+            <dt>Grösse</dt><dd>@Wert(art.Groesse)</dd>
+            <dt>Lebensraum</dt><dd>@Wert(art.Lebensraum)</dd>
+            <dt>Nahrung</dt><dd>@Wert(art.Nahrung)</dd>
+            <dt>Laichzeit</dt><dd>@Wert(art.Laichzeit)</dd>
+            <dt>Köder und Methoden</dt><dd>@Wert(art.Koeder)</dd>
+            <dt>Gefährdung (Bund)</dt><dd>@Wert(art.Gefaehrdung)</dd>
+            <dt>Verwechslungsgefahr</dt><dd>@Wert(art.Verwechslung)</dd>
+        </dl>
+    </section>
+}
+
+<Fusszeile />
+
+@code {
+    [Parameter] public string Id { get; set; } = "";
+
+    private Art? art;
+    private Kanton? kanton;
+    private EffektiveArtRegel? regel;
+    private bool geladen;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        art = await Daten.GetArtAsync(Id);
+        kanton = null;
+        regel = null;
+
+        var kantonId = await Einst.LesenAsync(Einstellungen.KantonSchluessel);
+        if (art is not null && !string.IsNullOrEmpty(kantonId))
+        {
+            kanton = await Daten.GetKantonAsync(kantonId);
+            if (kanton is not null)
+                regel = (await Daten.GetEffektiveRegelnAsync(kanton, null)).FirstOrDefault(r => r.Art.Id == art.Id);
+        }
+        geladen = true;
+    }
+
+    private static string Wert(string? text) =>
+        string.IsNullOrWhiteSpace(text) ? "wird noch erfasst" : text;
+}

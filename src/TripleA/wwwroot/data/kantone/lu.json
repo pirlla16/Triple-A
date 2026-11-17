@@ -1,0 +1,31 @@
+{
+  "id": "lu",
+  "name": "Luzern",
+  "kuerzel": "LU",
+  "system": "Patente für die Seen und für Patentstrecken an Flüssen, übrige Fliessgewässer verpachtet",
+  "zugang": "Patente gibt es bei den Patentausgabestellen des Kantons. Die heute gültigen Patentstrecken an den Flüssen werden noch geprüft.",
+  "erfasst": false,
+  "hinweise": [],
+  "koederRegeln": [],
+  "artRegeln": [],
+  "gewaesserIds": [
+    "sempachersee",
+    "hallwilersee",
+    "vierwaldstaettersee",
+    "kleine-emme",
+    "reuss-lu",
+    "pachtreviere-lu"
+  ],
+  "quellen": [
+    {
+      "titel": "Kantonale Fischereiverordnung Luzern",
+      "url": "https://srl.lu.ch/frontend/versions/427/download_pdf_file?locale=de",
+      "stand": null
+    },
+    {
+      "titel": "Patentausgabestellen Kanton Luzern",
+      "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/vz/vz_fischerei_patentausgabestellen.pdf",
+      "stand": null
+    }
+  ]
+}

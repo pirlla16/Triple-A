@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ag",
+    "name": "Aargau",
+    "kuerzel": "AG"
+  },
+  {
+    "id": "lu",
+    "name": "Luzern",
+    "kuerzel": "LU"
+  }
+]
