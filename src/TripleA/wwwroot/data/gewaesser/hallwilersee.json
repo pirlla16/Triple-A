@@ -6,41 +6,162 @@
     "ag",
     "lu"
   ],
-  "zugang": "Wird nicht verpachtet. Hallwilerseekarte für Inhaber eines Sachkundenachweises (SaNa), ab 10 Jahren. Angelfischerei ganzjährig erlaubt.",
-  "erfasst": false,
+  "zugang": "Gültige Fischereikarte des Kantons Aargau oder Fischereipatent des Kantons Luzern, ab 10 Jahren mit Sachkundenachweis (SaNa). Kinder bis Ende des 11. Altersjahres brauchen in Begleitung einer berechtigten Person keine Karte. Karte bzw. Patent mitführen (ohne Foto zusätzlich einen amtlichen Ausweis).",
+  "erfasst": true,
   "nurVerweis": false,
   "verweis": null,
   "hinweise": [
     {
-      "text": "Schonzeiten, Schonmasse und Fanglimiten richten sich nach der Übereinkunft AG/LU vom 27. Oktober 2021 (noch nicht erfasst).",
+      "text": "Fischen ist auch nachts erlaubt.",
       "quelle": {
-        "titel": "Fischereiverordnung AG, § 15 Abs. 4, § 16 Abs. 3, § 17 Abs. 1bis",
-        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
-        "stand": "2026-05-01"
+        "titel": "Übereinkunft Hallwilersee, § 9 Abs. 1",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "text": "Fänge in der Fangstatistik erfassen (zuständig ist der Kanton Aargau).",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 4 Abs. 1",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "text": "Fangverbote und Schutzzonen richten sich nach kommunalem, kantonalem und eidgenössischem Recht.",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 14",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "text": "Für Arten ohne Regel in der Übereinkunft gelten die Vorschriften des jeweiligen Kantons.",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 1",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
       }
     }
   ],
   "koederRegeln": [
     {
-      "text": "Schleppfischerei ganzjährig mit zwei Ruten sowie höchstens zwei Hauptschnüren mit je höchstens fünf Anbissstellen.",
+      "text": "Angel- und Schleppfischerei ganzjährig mit höchstens zwei Ruten bzw. zwei Schnüren mit je höchstens fünf Angeln (einfache Angel oder Dreiangel).",
       "quelle": {
-        "titel": "Fischereiverordnung AG, § 10 Abs. 1 lit. c",
-        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
-        "stand": "2026-05-01"
+        "titel": "Übereinkunft Hallwilersee, § 8",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "text": "Lebende Köderfische sind verboten. Erlaubt sind nur tote Köderfische nicht geschützter Arten aus dem Hallwilersee, die ein allfälliges Mindestmass erfüllen.",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 6",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "text": "Vom 26. Dezember bis 1. Mai beim Schleppangeln und Spinnfischen vom Boot mindestens 150 m Abstand zum Ufer.",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 7 Abs. 1",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
       }
     }
   ],
-  "artRegeln": [],
-  "quellen": [
+  "artRegeln": [
     {
-      "titel": "Übereinkunft Hallwilersee 2021 (AG/LU)",
-      "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
-      "stand": null
+      "artId": "felchen",
+      "schonmassCm": 25,
+      "schonzeitVon": "12-01",
+      "schonzeitBis": "02-10",
+      "fangLimiteProTag": 25,
+      "bemerkung": null,
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 15 Abs. 1 und § 16",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
     },
     {
-      "titel": "Verordnung zum Fischereigesetz des Kantons Aargau (SAR 935.211), Stand 1. Mai 2026",
-      "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
-      "stand": "2026-05-01"
+      "artId": "bachforelle",
+      "schonmassCm": 50,
+      "schonzeitVon": "09-16",
+      "schonzeitBis": "12-25",
+      "fangLimiteProTag": 1,
+      "bemerkung": "Limite gilt für Forellen insgesamt",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 15 Abs. 1 und § 16",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "artId": "seeforelle",
+      "schonmassCm": 50,
+      "schonzeitVon": "09-16",
+      "schonzeitBis": "12-25",
+      "fangLimiteProTag": 1,
+      "bemerkung": "Limite gilt für Forellen insgesamt",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 15 Abs. 1 und § 16",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "artId": "hecht",
+      "schonmassCm": 50,
+      "schonzeitVon": "02-01",
+      "schonzeitBis": "04-30",
+      "fangLimiteProTag": 3,
+      "bemerkung": null,
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 15 Abs. 1 und § 16",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "artId": "zander",
+      "schonmassCm": 50,
+      "schonzeitVon": "04-01",
+      "schonzeitBis": "05-31",
+      "bemerkung": "keine Fanglimite",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 15 Abs. 1 und § 16",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "artId": "egli",
+      "schonmassCm": 15,
+      "fangLimiteProTag": 30,
+      "bemerkung": "keine Schonzeit",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 15 Abs. 1 und § 16",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    },
+    {
+      "artId": "karpfen",
+      "schonmassCm": 35,
+      "bemerkung": "keine Schonzeit, keine Fanglimite",
+      "quelle": {
+        "titel": "Übereinkunft Hallwilersee, § 15 Abs. 1 und § 16",
+        "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+        "stand": "2022-01-01"
+      }
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Übereinkunft über den Fischfang im Hallwilersee (AG/LU), in Kraft seit 1. Januar 2022",
+      "url": "https://www.ag.ch/media/kanton-aargau/bvu/umwelt-natur/fischerei/fischerkarten-(bestellungen)/uebereinkunft-hallwilersee-2021.pdf",
+      "stand": "2022-01-01"
     },
     {
       "titel": "Angeln im Kanton Aargau",
