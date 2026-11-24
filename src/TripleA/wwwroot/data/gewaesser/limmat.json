@@ -1,0 +1,84 @@
+{
+  "id": "limmat",
+  "name": "Limmat",
+  "typ": "Fluss",
+  "kantone": [
+    "ag"
+  ],
+  "zugang": "Pachtreviere: Fischerkarte (Jahres-, Wochen- oder Tageskarte) beim Pächter des jeweiligen Reviers, mit Sachkundenachweis (SaNa). Zusätzliche Regeln des Reviers beim Pächter beachten.",
+  "erfasst": true,
+  "nurVerweis": false,
+  "verweis": null,
+  "hinweise": [
+    {
+      "text": "Angelfischerei ganzjährig erlaubt.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 15 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "text": "Fanglimite: höchstens sechs Fische der Arten Forelle und Hecht zusammen pro Tag.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 17 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    }
+  ],
+  "koederRegeln": [
+    {
+      "text": "Vom 1. März bis 30. September höchstens zwei Ruten bzw. Schnüre mit je höchstens fünf Angeln.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 10 Abs. 1 lit. b",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    }
+  ],
+  "artRegeln": [
+    {
+      "artId": "barbe",
+      "schonmassCm": 35,
+      "bemerkung": "",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1 lit. d",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "artId": "bachforelle",
+      "schonmassCm": 28,
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1 lit. h",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      },
+      "bemerkung": "Schonzeit bis Ende Februar"
+    },
+    {
+      "artId": "seeforelle",
+      "schonmassCm": 28,
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1 lit. h",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      },
+      "bemerkung": "Schonzeit bis Ende Februar"
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Verordnung zum Fischereigesetz des Kantons Aargau (SAR 935.211), Stand 1. Mai 2026",
+      "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+      "stand": "2026-05-01"
+    },
+    {
+      "titel": "Angeln im Kanton Aargau",
+      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
+      "stand": "2026-11-17"
+    }
+  ]
+}

@@ -129,7 +129,13 @@ else
                             @foreach (var e in mitAngaben)
                             {
                                 <tr>
-                                    <td><a href="@($"tiere/{e.Art.Id}")">@e.Art.Name</a></td>
+                                    <td>
+                                        <a href="@($"tiere/{e.Art.Id}")">@e.Art.Name</a>
+                                        @if (!string.IsNullOrWhiteSpace(e.Regel.Bemerkung))
+                                        {
+                                            <div class="stand">@e.Regel.Bemerkung</div>
+                                        }
+                                    </td>
                                     <td>@(e.Regel.SchonmassCm is int cm ? $"{cm} cm" : "–")</td>
                                     <td>
                                         @if (e.Regel.GanzjaehrigGeschont == true)

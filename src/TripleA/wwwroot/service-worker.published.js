@@ -37,7 +37,25 @@ async function onActivate(event) {
         .map(key => caches.delete(key)));
 }
 
+// Bilder von Wikimedia beim ersten Anzeigen speichern, damit sie auch offline verfügbar sind.
+const bilderCacheName = 'triplea-bilder-v1';
+
+async function bildAusCache(request) {
+    const cache = await caches.open(bilderCacheName);
+    const vorhanden = await cache.match(request);
+    if (vorhanden) return vorhanden;
+    const antwort = await fetch(request);
+    if (antwort.ok || antwort.type === 'opaque') {
+        await cache.put(request, antwort.clone());
+    }
+    return antwort;
+}
+
 async function onFetch(event) {
+    if (event.request.method === 'GET' && new URL(event.request.url).hostname.endsWith('wikimedia.org')) {
+        return bildAusCache(event.request);
+    }
+
     let cachedResponse = null;
     if (event.request.method === 'GET') {
         // For all navigation requests, try to serve index.html from cache,

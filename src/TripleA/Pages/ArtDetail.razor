@@ -17,7 +17,13 @@ else if (art is not null)
     <FischBild Art="art" Klasse="fischbild-gross" />
     @if (!string.IsNullOrWhiteSpace(art.BildQuelle))
     {
-        <p class="bildquelle">Bild: @art.BildQuelle</p>
+        <p class="bildquelle">
+            Bild: @art.BildQuelle
+            @if (!string.IsNullOrWhiteSpace(art.BildSeite))
+            {
+                <a href="@art.BildSeite" target="_blank" rel="noopener">(Quelle)</a>
+            }
+        </p>
     }
 
     @if (kanton is not null && regel is not null)

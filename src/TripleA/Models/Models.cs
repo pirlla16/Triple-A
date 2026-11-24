@@ -24,6 +24,7 @@ public class Art
     public string? Herkunft { get; set; }
     public string? Bild { get; set; }
     public string? BildQuelle { get; set; }
+    public string? BildSeite { get; set; }
     public string? Merkmale { get; set; }
     public string? Groesse { get; set; }
     public string? Lebensraum { get; set; }

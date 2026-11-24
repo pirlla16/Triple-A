@@ -6,12 +6,30 @@
     "ag",
     "lu"
   ],
-  "zugang": "Wird nicht verpachtet. Hallwilerseekarte für Inhaber eines Sachkundenachweises. Zusätzlich gilt am ganzen Aargauer Ufer das Freianglerrecht (Abschnitt J).",
+  "zugang": "Wird nicht verpachtet. Hallwilerseekarte für Inhaber eines Sachkundenachweises (SaNa), ab 10 Jahren. Angelfischerei ganzjährig erlaubt.",
   "erfasst": false,
   "nurVerweis": false,
   "verweis": null,
-  "hinweise": [],
-  "koederRegeln": [],
+  "hinweise": [
+    {
+      "text": "Schonzeiten, Schonmasse und Fanglimiten richten sich nach der Übereinkunft AG/LU vom 27. Oktober 2021 (noch nicht erfasst).",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 15 Abs. 4, § 16 Abs. 3, § 17 Abs. 1bis",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    }
+  ],
+  "koederRegeln": [
+    {
+      "text": "Schleppfischerei ganzjährig mit zwei Ruten sowie höchstens zwei Hauptschnüren mit je höchstens fünf Anbissstellen.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 10 Abs. 1 lit. c",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    }
+  ],
   "artRegeln": [],
   "quellen": [
     {
@@ -20,13 +38,13 @@
       "stand": null
     },
     {
-      "titel": "Angeln im Kanton Aargau",
-      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
-      "stand": "2026-11-17"
+      "titel": "Verordnung zum Fischereigesetz des Kantons Aargau (SAR 935.211), Stand 1. Mai 2026",
+      "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+      "stand": "2026-05-01"
     },
     {
-      "titel": "Freianglerrecht Kanton Aargau",
-      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
+      "titel": "Angeln im Kanton Aargau",
+      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
       "stand": "2026-11-17"
     }
   ]

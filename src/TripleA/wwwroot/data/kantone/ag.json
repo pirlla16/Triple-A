@@ -2,35 +2,198 @@
   "id": "ag",
   "name": "Aargau",
   "kuerzel": "AG",
-  "system": "Pachtreviere mit Fischerkarten, dazu Hallwilerseekarte und Freianglerkarte",
-  "zugang": "Nötig sind der Sachkundenachweis (SaNa) und eine Fischerkarte. Gefangene Fische werden in der Fangstatistik erfasst und am Jahresende eingereicht.",
-  "erfasst": false,
-  "hinweise": [],
-  "koederRegeln": [],
-  "artRegeln": [],
+  "system": "Pachtreviere: Fischerkarte (Jahres-, Wochen- oder Tageskarte) beim Pächter des Reviers; Hallwilersee mit Hallwilerseekarte",
+  "zugang": "Nötig sind der Sachkundenachweis (SaNa) und eine Fischerkarte (Mindestalter 12 Jahre, Hallwilersee 10 Jahre). Gefangene Fische werden in der Fangstatistik erfasst und am Jahresende eingereicht.",
+  "erfasst": true,
+  "hinweise": [
+    {
+      "text": "Angelzeit: In Rhein, Aare, Reuss, Limmat, Hallwilersee, Suhre und Aabach ganzjährig, in den übrigen Fliessgewässern vom 1. März bis 30. September.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 15 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "text": "Laichgebiete von Äsche und Forelle dürfen von Dezember bis April nicht betreten werden, jene der Nase im April und Mai.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 20 Abs. 4",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "text": "Zu kleine Fische sofort und sorgfältig zurücksetzen. Lässt sich die Angel nicht ohne Verletzung entfernen, die Schnur abschneiden.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 2",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    }
+  ],
+  "koederRegeln": [
+    {
+      "text": "Eine Rute bzw. Schnur mit höchstens fünf Angeln (einfache Angel oder Dreiangel).",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 10 Abs. 1 lit. a",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "text": "Die Rute muss beim Fischen dauernd unter direkter Kontrolle bleiben. Wer mehrere Fischereikarten hat, fischt gleichzeitig mit höchstens zwei Ruten.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 10 Abs. 2 und 3",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "text": "Mit Jahres-, Wochen- oder Tageskarte nur vom Ufer aus, sofern der Pachtvertrag nichts anderes bestimmt. Durch Waten erreichbare Inseln gelten als Ufer.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 10 Abs. 4",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "text": "Lebende Köderfische nur in Weihern und Kleinseen bis 30 ha, nur im Einzugsgebiet heimische Arten, nur am Maul befestigt, nicht beim Schleppen. Köderfische nicht mit Netzen fangen.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 12",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "text": "Angeln mit Widerhaken sind für die Hegenen- und Schleppangelfischerei erlaubt.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 10 Abs. 1 lit. d",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "text": "Verboten: Betäubungsmittel, Gifte, Feuerwaffen, Speere, Harpunen, Pfeile, Sprengstoff, Absperren oder Trockenlegen von Gewässern sowie absichtliches Haken ausserhalb des Mauls.",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 9 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    }
+  ],
+  "artRegeln": [
+    {
+      "artId": "aesche",
+      "ganzjaehrigGeschont": true,
+      "bemerkung": "ganzjährig geschont",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 15 Abs. 2",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "artId": "bachforelle",
+      "schonmassCm": 22,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "02-28",
+      "bemerkung": "Schonzeit bis Ende Februar; Schonmass im Bach und Weiher (Rhein, Aare, Reuss, Limmat: 28 cm)",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "artId": "seeforelle",
+      "schonmassCm": 22,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "02-28",
+      "bemerkung": "Schonzeit bis Ende Februar; Schonmass im Bach und Weiher (Rhein, Aare, Reuss, Limmat: 28 cm)",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "artId": "barbe",
+      "schonmassCm": 30,
+      "bemerkung": "Schonmass im Bach (Rhein, Aare, Reuss, Limmat: 35 cm)",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "artId": "egli",
+      "schonmassCm": 15,
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "artId": "felchen",
+      "schonmassCm": 25,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-31",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "artId": "hecht",
+      "schonmassCm": 50,
+      "schonzeitVon": "02-01",
+      "schonzeitBis": "04-30",
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "artId": "karpfen",
+      "schonmassCm": 30,
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    },
+    {
+      "artId": "schleie",
+      "schonmassCm": 25,
+      "quelle": {
+        "titel": "Fischereiverordnung AG, § 16 Abs. 1",
+        "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+        "stand": "2026-05-01"
+      }
+    }
+  ],
   "gewaesserIds": [
     "hallwilersee",
-    "freiangler-aare",
-    "freiangler-reuss",
-    "freiangler-limmat",
-    "freiangler-rhein",
+    "aare",
+    "reuss-ag",
+    "limmat",
+    "rhein",
     "pachtreviere-ag"
   ],
   "quellen": [
     {
+      "titel": "Verordnung zum Fischereigesetz des Kantons Aargau (SAR 935.211), Stand 1. Mai 2026",
+      "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
+      "stand": "2026-05-01"
+    },
+    {
       "titel": "Angeln im Kanton Aargau",
       "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
       "stand": "2026-11-17"
-    },
-    {
-      "titel": "Freianglerrecht Kanton Aargau",
-      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/freianglerrecht",
-      "stand": "2026-11-17"
-    },
-    {
-      "titel": "Verordnung zum Fischereigesetz des Kantons Aargau (SAR 935.211)",
-      "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
-      "stand": null
     }
   ]
 }
