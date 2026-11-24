@@ -106,15 +106,15 @@
     },
     {
       "artId": "seeforelle",
-      "schonmassCm": 22,
       "schonzeitVon": "10-01",
       "schonzeitBis": "02-28",
-      "bemerkung": "Schonzeit bis Ende Februar; Schonmass im Bach und Weiher (Rhein, Aare, Reuss, Limmat: 28 cm)",
+      "bemerkung": "Schonzeit bis Ende Februar; in Rhein, Aare, Reuss, Limmat Schonmass 28 cm",
       "quelle": {
         "titel": "Fischereiverordnung AG, § 16 Abs. 1",
         "url": "https://gesetzessammlungen.ag.ch/api/de/versions/3942/pdf_file_with_annexes",
         "stand": "2026-05-01"
-      }
+      },
+      "schonmassCm": null
     },
     {
       "artId": "barbe",

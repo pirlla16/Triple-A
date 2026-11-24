@@ -96,7 +96,8 @@ public class DatenService(HttpClient http)
         SchonzeitBis = neu.SchonzeitBis ?? basis.SchonzeitBis,
         GanzjaehrigGeschont = neu.GanzjaehrigGeschont ?? basis.GanzjaehrigGeschont,
         FangLimiteProTag = neu.FangLimiteProTag ?? basis.FangLimiteProTag,
-        Bemerkung = neu.Bemerkung ?? basis.Bemerkung,
+        // Bemerkungen gelten nur für ihre eigene Ebene (sonst passen z.B. Bundes-Hinweise nicht zu kantonalen Daten)
+        Bemerkung = neu.Bemerkung,
         Quelle = neu.Quelle ?? basis.Quelle
     };
 

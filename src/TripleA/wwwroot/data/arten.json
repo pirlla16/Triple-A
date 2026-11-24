@@ -12,7 +12,7 @@
     "nahrung": "Insektenlarven, Anflugnahrung und andere Kleintiere.",
     "laichzeit": "März bis Mai über Kiesgrund in strömendem Wasser.",
     "koeder": "Nymphe und Trockenfliege, kleine Köder.",
-    "gefaehrdung": null,
+    "gefaehrdung": "2 – stark gefährdet; europäisch geschützt (Berner Konvention) (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Kaum; Jungfische können mit jungen Forellen oder Felchen verwechselt werden.",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Thymallus_thymallus_P%C3%A9nzes_p%C3%A9r.jpg"
   },
@@ -29,7 +29,7 @@
     "nahrung": "Allesfresser: Insekten, Würmer, Pflanzen und Früchte, grosse Tiere auch Kleinfische.",
     "laichzeit": "April bis Juni über Kies in strömendem Wasser.",
     "koeder": "Brot, Käse, Kirschen, Maden, Würmer, kleine Spinner und Wobbler, Fliege.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Hasel (Afterflosse nach innen gewölbt); junge Alet mit dem Rotauge.",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Squalius_cephalus_Prague_Vltava_2.jpg"
   },
@@ -46,7 +46,7 @@
     "nahrung": "Insektenlarven, Anflugnahrung, Bachflohkrebse, grössere Tiere auch Fische.",
     "laichzeit": "Oktober bis Januar in Laichgruben im Kies.",
     "koeder": "Spinner, kleine Wobbler, Nymphe und Fliege, Wurm.",
-    "gefaehrdung": null,
+    "gefaehrdung": "4 – potenziell gefährdet (Bachforelle); Flussforelle 2 – stark gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Seeforelle (silbriger, x-förmige Flecken), Regenbogenforelle (rosa Band, Punkte auf der Schwanzflosse), Bachsaibling (Wurmlinien).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Salmo_trutta_fario_Bachforelle.JPG"
   },
@@ -63,7 +63,7 @@
     "nahrung": "Insekten, Kleinkrebse und kleine Fische.",
     "laichzeit": "Oktober bis Dezember.",
     "koeder": "Spinner, Fliege, Wurm, Bienenmade.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht einheimisch (VBGF Anhang 2), kein Gefährdungsstatus",
     "verwechslung": "Seesaibling (ohne Wurmlinien), Bachforelle (ohne weissen Flossensaum).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Native_brook_trout.jpg"
   },
@@ -80,7 +80,7 @@
     "nahrung": "Bodentiere: Insektenlarven, Würmer, Schnecken, Kleinkrebse.",
     "laichzeit": "Mai bis Juli über Kies.",
     "koeder": "Grundangeln mit Wurm, Maden, Käse, Frühstücksfleisch oder Pellets.",
-    "gefaehrdung": null,
+    "gefaehrdung": "4 – potenziell gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Gründling (viel kleiner, nur zwei Barteln). Achtung: Der Rogen der Barbe ist giftig.",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Barbel.jpg"
   },
@@ -97,7 +97,7 @@
     "nahrung": "Zuckmückenlarven, Würmer, Schnecken, Plankton.",
     "laichzeit": "Mai bis Juni in flachen, pflanzenreichen Uferzonen.",
     "koeder": "Grund- oder Feederangeln mit Maden, Würmern oder Mais.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Blicke (Güster): kleiner, grössere Augen, rötlicher Ansatz der Brustflossen.",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Carp_bream1.jpg"
   },
@@ -114,7 +114,7 @@
     "nahrung": "Kleintiere, mit zunehmender Grösse vor allem Fische.",
     "laichzeit": "März bis Mai; der Laich wird in Bändern an Pflanzen und Ästen abgelegt.",
     "koeder": "Wurm, Maden, kleine Gummifische, Spinner, Dropshot, Hegene.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Kaulbarsch (zusammenhängende Rückenflosse, gepunktet), junger Zander.",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Perca_fluviatilis.jpg"
   },
@@ -131,7 +131,7 @@
     "nahrung": "Zooplankton und Insektenlarven (v.a. Zuckmücken).",
     "laichzeit": "Meist November bis Dezember, je nach Form verschieden.",
     "koeder": "Hegene mit kleinen Nymphen.",
-    "gefaehrdung": null,
+    "gefaehrdung": "4 – potenziell gefährdet; europäisch geschützt (Berner Konvention) (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Die einzelnen Felchenformen untereinander; Äsche (grosse Rückenflosse).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Coregonus_lavaretus.jpg"
   },
@@ -148,7 +148,7 @@
     "nahrung": "Fische, auch Frösche und junge Wasservögel.",
     "laichzeit": "Februar bis April in überfluteten, flachen Pflanzenzonen.",
     "koeder": "Gummifische, Wobbler, Spinner, Löffel, toter Köderfisch. Stahlvorfach empfohlen.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Kaum.",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Esox_lucius_ZOO_1.jpg"
   },
@@ -165,7 +165,7 @@
     "nahrung": "Fische, Krebse, Insekten.",
     "laichzeit": "Oktober bis November auf steinigem Grund im See.",
     "koeder": "Schleppfischen mit Löffeln und Wobblern in der Tiefe, Jigs.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht einheimisch (VBGF Anhang 2), kein Gefährdungsstatus",
     "verwechslung": "Seesaibling (Schwanzflosse kaum gegabelt, zur Laichzeit roter Bauch).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Salvelinus_namaycush_33213698.jpg"
   },
@@ -173,16 +173,16 @@
     "id": "karpfen",
     "name": "Karpfen",
     "familie": "Karpfenartige",
-    "herkunft": "eingeführt",
+    "herkunft": "einheimisch (gemäss VBGF)",
     "bild": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Common_carp.jpg",
     "bildQuelle": "USFWS, Public domain, Wikimedia Commons",
     "merkmale": "Hochrückig, vier Barteln an der Oberlippe (zwei kurze, zwei längere), lange Rückenflosse mit gesägtem Hartstrahl. Formen: Schuppen-, Spiegel- und Lederkarpfen.",
     "groesse": "Meist 40–80 cm, über 1 m möglich.",
-    "lebensraum": "Warme, nährstoffreiche, ruhige Gewässer mit Schlammgrund. Ursprünglich aus Osteuropa und Asien.",
+    "lebensraum": "Warme, nährstoffreiche, ruhige Gewässer mit Schlammgrund. Stammt ursprünglich aus dem Donauraum und Asien, gilt in der Schweiz aber als einheimisch.",
     "nahrung": "Bodentiere und Pflanzen.",
     "laichzeit": "Mai bis Juli bei über 18 °C an pflanzenreichen Ufern.",
     "koeder": "Boilies, Mais, Teig, Kartoffeln, Würmer; Grundangeln.",
-    "gefaehrdung": null,
+    "gefaehrdung": "4 – potenziell gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Karausche und Giebel (ohne Barteln).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Common_carp.jpg"
   },
@@ -199,7 +199,7 @@
     "nahrung": "Insekten, Kleinkrebse, Fische.",
     "laichzeit": "Dezember bis April, je nach Stamm.",
     "koeder": "Spinner, Bienenmade, Forellenteig, Fliege.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht einheimisch (VBGF Anhang 2), kein Gefährdungsstatus",
     "verwechslung": "Bachforelle (rote Punkte, Schwanzflosse ohne Punkte).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Rainbow_Trout_(Oncorhynchus_mykiss)_(cropped).jpg"
   },
@@ -216,7 +216,7 @@
     "nahrung": "Plankton, Insektenlarven, Pflanzen, Schnecken.",
     "laichzeit": "April bis Mai an Pflanzen.",
     "koeder": "Maden, Brot, Teig, Mais; feine Posenmontage.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Rotfeder (Rückenflosse beginnt deutlich hinter den Bauchflossen, Maul nach oben gerichtet, Flossen kräftiger rot).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Rutilus_rutilus_by_Algirdas_cropped.jpg"
   },
@@ -233,7 +233,7 @@
     "nahrung": "Wasserpflanzen, Insekten, Anflugnahrung.",
     "laichzeit": "April bis Juni an Pflanzen.",
     "koeder": "Brot an der Oberfläche, Maden, Mais.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Rotauge (Rückenflosse über den Bauchflossen, rote Iris).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Scardinius_erythropthalmus_2009_G1.jpg"
   },
@@ -250,7 +250,7 @@
     "nahrung": "Bodentiere, Schnecken, Muscheln, Pflanzen.",
     "laichzeit": "Mai bis Juli in dichtem Pflanzenbewuchs.",
     "koeder": "Würmer, Maden, Mais; Pose in Grundnähe, am besten früh morgens.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Kaum.",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Tinca_tinca_Prague_Vltava_1.jpg"
   },
@@ -267,7 +267,7 @@
     "nahrung": "Vor allem Fische (Felchen, Egli, Saiblinge).",
     "laichzeit": "Oktober bis Januar in den Zuflüssen.",
     "koeder": "Schleppfischen und Spinnfischen mit Löffeln und Wobblern.",
-    "gefaehrdung": null,
+    "gefaehrdung": "2 – stark gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Bachforelle (rote Punkte), Regenbogenforelle (rosa Band).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Insj%C3%B6%C3%B6ring_-_Salmo_trutta_lacustris_f%C3%A5ngad_i_en_tj%C3%A4rn_i_Rogens_naturreservat.tif"
   },
@@ -284,7 +284,7 @@
     "nahrung": "Plankton und Bodentiere, grosse Tiere auch Fische.",
     "laichzeit": "Meist Oktober bis Dezember, je nach Population verschieden.",
     "koeder": "Hegene, kleine Löffel, Schleppen in der Tiefe.",
-    "gefaehrdung": null,
+    "gefaehrdung": "3 – gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Bachsaibling (Wurmlinien auf dem Rücken), Kanadischer Seesaibling (gegabelte Schwanzflosse).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Salvelinus_umbla_IMG_5130.jpg"
   },
@@ -301,7 +301,7 @@
     "nahrung": "Bodentiere, Fische, Fischlaich.",
     "laichzeit": "Dezember bis März.",
     "koeder": "Grundangeln in der Nacht mit Wurm, Fischfetzen oder totem Köderfisch, vor allem im Winter.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht gefährdet (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Wels (lange Barteln, keine zwei Rückenflossen).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Burbot_(Lota_lota)_(52880431837).jpg"
   },
@@ -318,7 +318,7 @@
     "nahrung": "Fische, Krebse, Frösche, Wasservögel.",
     "laichzeit": "Mai bis Juli bei warmem Wasser; das Männchen bewacht das Nest.",
     "koeder": "Köderfisch, Wurmbündel, Pellets, grosse Gummifische.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht gefährdet; europäisch geschützt (Berner Konvention) (VBGF Anhang 1, Stand 2021)",
     "verwechslung": "Trüsche (nur ein Bartfaden am Kinn).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Freischwimmender_Wels.jpg"
   },
@@ -335,7 +335,7 @@
     "nahrung": "Kleine Fische.",
     "laichzeit": "April bis Juni in Nestern auf hartem Grund, vom Männchen bewacht.",
     "koeder": "Gummifisch (Jig, Dropshot), toter Köderfisch, Wobbler; vor allem in der Dämmerung.",
-    "gefaehrdung": null,
+    "gefaehrdung": "nicht einheimisch (VBGF Anhang 2), kein Gefährdungsstatus",
     "verwechslung": "Egli (rote Flossen, schwarzer Fleck auf der ersten Rückenflosse).",
     "bildSeite": "https://commons.wikimedia.org/wiki/File:Hal_-_Sander_lucioperca_-_1.jpg"
   }

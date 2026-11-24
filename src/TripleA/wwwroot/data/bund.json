@@ -1,17 +1,120 @@
 {
-  "erfasst": false,
-  "allgemeineRegeln": [],
-  "artRegeln": [],
-  "quellen": [
+  "erfasst": true,
+  "allgemeineRegeln": [
     {
-      "titel": "Bundesgesetz über die Fischerei (BGF), SR 923.0",
-      "url": null,
-      "stand": null
+      "text": "Für den Erwerb einer Fischereiberechtigung ist ein Sachkundenachweis (SaNa) nötig.",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 5a",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
     },
     {
-      "titel": "Verordnung zum Bundesgesetz über die Fischerei (VBGF), SR 923.01",
-      "url": null,
-      "stand": null
+      "text": "Lebende Köderfische sind grundsätzlich verboten. Kantone können einheimische lebende Köderfische für SaNa-Inhaber zulassen, nur am Maul befestigt.",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 5b Abs. 3",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Angeln mit Widerhaken sind grundsätzlich verboten. Kantone können sie für SaNa-Inhaber in Seen und Stauhaltungen zulassen.",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 5b Abs. 4",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Fische, die den Schonbestimmungen nicht entsprechen: lebensfähige sofort zurücksetzen, nicht lebensfähige sofort töten und zurücksetzen.",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 5b Abs. 2",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Zum Verzehr gefangene Fische sofort töten; SaNa-Inhaber dürfen sie kurzfristig hältern, ohne dass sie leiden.",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 5b Abs. 1",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Gemessen wird von der Kopfspitze bis zu den Spitzen der natürlich ausgebreiteten Schwanzflosse.",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 2 Abs. 2",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Arten mit Gefährdungsstatus 0–2 ohne Schonzeit oder Mindestmass dürfen nicht gefangen werden. Lachse sind der kantonalen Fischereifachstelle sofort zu melden.",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 2a",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    }
+  ],
+  "artRegeln": [
+    {
+      "artId": "bachforelle",
+      "schonmassCm": 22,
+      "bemerkung": "Bund: in grösseren Seen unter 800 m ü. M. 35 cm; Schonzeit mind. 16 Wochen (Fliessgewässer) bzw. 12 Wochen (Seen), Daten legt der Kanton fest",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 1 und 2",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "seeforelle",
+      "schonmassCm": 35,
+      "bemerkung": "Bund: 35 cm in grösseren Seen unter 800 m ü. M., sonst 22 cm; Schonzeit mind. 12 Wochen (Seen) bzw. 16 Wochen (Fliessgewässer)",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 1 und 2",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "seesaibling",
+      "schonmassCm": 22,
+      "bemerkung": "Bund: Schonzeit mind. 8 Wochen, Daten legt der Kanton fest",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 1 und 2",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "felchen",
+      "schonmassCm": 25,
+      "bemerkung": "Bund: Schonzeit mind. 6 Wochen, Daten legt der Kanton fest",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 1 und 2",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "aesche",
+      "schonmassCm": 28,
+      "bemerkung": "Bund: Schonzeit mind. 10 Wochen, Daten legt der Kanton fest",
+      "quelle": {
+        "titel": "VBGF (SR 923.01), Art. 1 und 2",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+        "stand": "2021-01-01"
+      }
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Verordnung zum Bundesgesetz über die Fischerei (VBGF), SR 923.01, Stand 1. Januar 2021",
+      "url": "https://www.fedlex.admin.ch/eli/cc/1993/3384_3384_3384/de",
+      "stand": "2021-01-01"
     }
   ]
 }
