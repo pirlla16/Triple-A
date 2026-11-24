@@ -38,7 +38,17 @@
         <span class="dismiss">×</span>
     </div>
     <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
-    <script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            // Wenn eine neue Version aktiv wird, die Seite einmal neu laden, damit die neuen Daten erscheinen.
+            var hatteVersion = !!navigator.serviceWorker.controller;
+            var neuGeladen = false;
+            navigator.serviceWorker.addEventListener('controllerchange', function () {
+                if (hatteVersion && !neuGeladen) { neuGeladen = true; location.reload(); }
+            });
+            navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });
+        }
+    </script>
 </body>
 
 </html>
