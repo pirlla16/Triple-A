@@ -1,0 +1,57 @@
+@* Regeln nach Ebene umschaltbar: Gewässer → Kanton → Bund.
+   Angezeigt wird zuerst die genaueste Ebene, die Regeln enthält. *@
+
+<div class="ebenen-schalter" role="tablist">
+    @foreach (var e in Ebenen)
+    {
+        <button type="button" role="tab" aria-selected="@(e.Name == aktiv ? "true" : "false")"
+                class="ebenen-knopf @(e.Name == aktiv ? "aktiv" : "")" @onclick="() => aktiv = e.Name">
+            @e.Name <span class="anzahl">@e.Regeln.Count</span>
+        </button>
+    }
+</div>
+
+<p class="ebenen-hinweis">@Hinweis()</p>
+
+@if (AktiveRegeln.Count == 0)
+{
+    <p class="leer">Auf dieser Ebene sind keine eigenen Regeln erfasst.</p>
+}
+else
+{
+    <RegelListe Regeln="AktiveRegeln" />
+}
+
+@code {
+    [Parameter] public List<Regel>? BundRegeln { get; set; }
+    [Parameter] public List<Regel>? KantonRegeln { get; set; }
+    [Parameter] public List<Regel>? GewaesserRegeln { get; set; }
+    [Parameter] public string? KantonName { get; set; }
+    [Parameter] public string? GewaesserName { get; set; }
+
+    private string? aktiv;
+
+    private record EbeneEintrag(string Name, List<Regel> Regeln);
+
+    private List<EbeneEintrag> Ebenen => new()
+    {
+        new("Gewässer", GewaesserRegeln ?? new()),
+        new("Kanton", KantonRegeln ?? new()),
+        new("Bund", BundRegeln ?? new())
+    };
+
+    private List<Regel> AktiveRegeln =>
+        Ebenen.FirstOrDefault(e => e.Name == aktiv)?.Regeln ?? new();
+
+    protected override void OnParametersSet()
+    {
+        aktiv ??= Ebenen.FirstOrDefault(e => e.Regeln.Count > 0)?.Name ?? "Gewässer";
+    }
+
+    private string Hinweis() => aktiv switch
+    {
+        "Gewässer" => $"Gilt nur für {GewaesserName} und geht den Regeln von Kanton und Bund vor.",
+        "Kanton" => $"Gilt im ganzen Kanton {KantonName}, soweit für das Gewässer nichts anderes festgelegt ist. Geht den Vorgaben des Bundes vor.",
+        _ => "Mindestvorgaben des Bundes. Sie gelten, soweit Kanton oder Gewässer nichts Genaueres oder Strengeres festlegen."
+    };
+}

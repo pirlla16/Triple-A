@@ -98,6 +98,23 @@ a { color: var(--blau-dunkel); }
 .tabelle th { font-size: .8rem; color: #5b7385; }
 .geschuetzt { color: #b03a2e; font-weight: 600; }
 
+/* Umschalter Gewässer / Kanton / Bund */
+.ebenen-schalter {
+    display: flex; gap: 4px; padding: 4px; margin-bottom: .6rem;
+    background: var(--hellblau); border-radius: 12px;
+}
+.ebenen-knopf {
+    flex: 1; border: 0; background: transparent; color: var(--tinte);
+    padding: .45rem .3rem; border-radius: 9px; font-size: .9rem; cursor: pointer;
+}
+.ebenen-knopf.aktiv { background: #fff; color: var(--blau-dunkel); font-weight: 600; box-shadow: 0 1px 3px rgba(23,50,74,.15); }
+.ebenen-knopf .anzahl {
+    display: inline-block; min-width: 1.3em; margin-left: .25rem; padding: 0 .3rem;
+    font-size: .75rem; border-radius: 999px; background: var(--rand); color: var(--tinte);
+}
+.ebenen-knopf.aktiv .anzahl { background: var(--blau-dunkel); color: #fff; }
+.ebenen-hinweis { font-size: .82rem; color: #5b7385; margin: 0 0 .4rem; }
+
 /* Artenliste */
 .artenliste { list-style: none; margin: 0; padding: 0; }
 .art-eintrag {
