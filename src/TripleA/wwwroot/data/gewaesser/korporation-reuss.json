@@ -200,5 +200,12 @@
       "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
       "stand": "2024-01-01"
     }
+  ],
+  "bezug": [
+    {
+      "titel": "Patent Korporation Luzern",
+      "url": "https://www.korporationluzern.ch",
+      "stand": null
+    }
   ]
 }

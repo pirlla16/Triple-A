@@ -68,6 +68,7 @@ else
                     <p>@gewaesser.Zugang</p>
                 }
                 <RegelListe Regeln="gewaesser.Hinweise" />
+                <BezugLinks Links="gewaesser.Bezug" />
                 @if (gewaesser.Verweis is not null)
                 {
                     <p>
@@ -100,6 +101,7 @@ else
                     <p>@gewaesser.Zugang</p>
                 }
                 <RegelListe Regeln="gewaesser.Hinweise" />
+                <BezugLinks Links="gewaesser.Bezug" />
             </section>
 
             <section class="karte">
@@ -201,7 +203,7 @@ else
     }
 }
 
-<Fusszeile />
+<Fusszeile Kontext="@KontextText()" />
 
 @code {
     private List<KantonEintrag>? kantonListe;
@@ -276,6 +278,9 @@ else
         mitAngaben = alle.Where(e => e.HatAngaben).ToList();
         geschuetzt = alle.Where(e => e.Regel.GanzjaehrigGeschont == true).ToList();
     }
+
+    private string? KontextText() =>
+        kanton is null ? null : gewaesser is null ? kanton.Name : $"{kanton.Name} / {gewaesser.Name}";
 
     private IEnumerable<Quelle> Quellen()
     {

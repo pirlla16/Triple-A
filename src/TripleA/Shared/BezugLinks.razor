@@ -1,0 +1,15 @@
+@* Links, wo man Fischerkarte oder Patent für das Gewässer bekommt. *@
+
+@if (Links is not null && Links.Count > 0)
+{
+    <div class="bezug">
+        @foreach (var l in Links.Where(l => !string.IsNullOrWhiteSpace(l.Url)))
+        {
+            <a class="bezug-knopf" href="@l.Url" target="_blank" rel="noopener">@l.Titel ›</a>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public List<Quelle>? Links { get; set; }
+}

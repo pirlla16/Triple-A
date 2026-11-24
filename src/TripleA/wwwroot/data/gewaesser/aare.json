@@ -88,5 +88,12 @@
       "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
       "stand": "2026-11-17"
     }
+  ],
+  "bezug": [
+    {
+      "titel": "Fischerkarte: Reviere und Pächter (Kanton Aargau)",
+      "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/fischerei-im-kanton-aargau/revierkarten",
+      "stand": null
+    }
   ]
 }

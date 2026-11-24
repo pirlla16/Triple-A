@@ -13,6 +13,10 @@ public class Meta
 {
     public string Version { get; set; } = "";
     public string Stand { get; set; } = "";
+    /// <summary>Datenstand als Datum (JJJJ-MM-TT) für die Warnung bei veralteten Daten.</summary>
+    public string? StandIso { get; set; }
+    /// <summary>E-Mail-Adresse für "Fehler melden". Leer = GitHub-Issue.</summary>
+    public string? Kontakt { get; set; }
 }
 
 /// <summary>Eine Fischart im Lexikon (Reiter "Tiere").</summary>
@@ -102,6 +106,8 @@ public class Gewaesser
     /// <summary>Pachtrevier: Die App zeigt nur einen Verweis auf den Pachtverein.</summary>
     public bool NurVerweis { get; set; }
     public Quelle? Verweis { get; set; }
+    /// <summary>Wo man Fischerkarte bzw. Patent für dieses Gewässer bekommt.</summary>
+    public List<Quelle> Bezug { get; set; } = new();
     public List<Regel> Hinweise { get; set; } = new();
     public List<Regel> KoederRegeln { get; set; } = new();
     public List<ArtRegel> ArtRegeln { get; set; } = new();

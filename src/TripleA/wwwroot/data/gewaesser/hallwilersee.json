@@ -168,5 +168,17 @@
       "url": "https://www.ag.ch/de/themen/landwirtschaft-tiere/wild-wassertiere/fischerei/informationen-fuer-fischerinnen-und-fischer/angeln-im-kanton-aargau",
       "stand": "2026-11-17"
     }
+  ],
+  "bezug": [
+    {
+      "titel": "Hallwilerseekarte bestellen (Kanton Aargau)",
+      "url": "https://www.ag.ch/de/verwaltung/bvu/jagd-fischerei/fischerei/bestellung-fischerkarten",
+      "stand": null
+    },
+    {
+      "titel": "Patentausgabestellen Kanton Luzern",
+      "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/vz/vz_fischerei_patentausgabestellen.pdf",
+      "stand": null
+    }
   ]
 }

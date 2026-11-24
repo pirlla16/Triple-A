@@ -26,6 +26,9 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
+      - name: Daten prüfen
+        run: python3 tools/pruefe_daten.py
+
       - name: App veröffentlichen
         run: dotnet publish src/TripleA/TripleA.csproj -c Release -o publish
 

@@ -57,7 +57,10 @@ Die Adresse steht in der Ausgabe (z.B. http://localhost:5xxx). Offline-Funktion 
 
 1. JSON-Datei unter `src/TripleA/wwwroot/data` anpassen. Jede Regel bekommt eine `quelle` mit Titel, Link und Stand.
 2. Wenn ein Gewässer vollständig erfasst ist: `"erfasst": true` setzen (sonst zeigt die App einen Hinweis).
-3. In `meta.json` Version und Stand erhöhen.
+3. In `meta.json` Version, `stand` und `standIso` (JJJJ-MM-TT) aktualisieren. Ist `standIso` älter als 13 Monate, zeigt die App eine Warnung.
+   Optional: unter `kontakt` eine E-Mail-Adresse für «Fehler melden» eintragen (leer = GitHub-Issue).
+   Pro Gewässer listet `bezug` die Links, wo man Karte oder Patent bekommt.
+   Vor dem Hochladen prüfen: `python3 tools/pruefe_daten.py` (läuft auch automatisch bei jedem Push).
 4. `git add . && git commit -m "Daten aktualisiert" && git push`
 
 Nach dem Veröffentlichen holt sich die App die neue Version beim nächsten Öffnen; sichtbar wird sie spätestens nach einem zweiten Öffnen.

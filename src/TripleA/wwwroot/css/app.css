@@ -115,6 +115,16 @@ a { color: var(--blau-dunkel); }
 .ebenen-knopf.aktiv .anzahl { background: var(--blau-dunkel); color: #fff; }
 .ebenen-hinweis { font-size: .82rem; color: #5b7385; margin: 0 0 .4rem; }
 
+
+/* Links zu Karte / Patent */
+.bezug { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .7rem; }
+.bezug-knopf {
+    display: inline-block; padding: .5rem .9rem; border-radius: 10px;
+    background: var(--blau-dunkel); color: #fff; text-decoration: none; font-size: .9rem; font-weight: 600;
+}
+.fehler-melden { color: var(--blau-dunkel); background: none; border: 0; padding: 0; font: inherit; text-decoration: underline; cursor: pointer; }
+.fehler-hinweis { background: var(--warn); border: 1px solid #f0d68a; border-radius: 10px; padding: .5rem .7rem; color: var(--tinte); }
+
 /* Artenliste */
 .artenliste { list-style: none; margin: 0; padding: 0; }
 .art-eintrag {

@@ -79,7 +79,7 @@ else if (art is not null)
     </section>
 }
 
-<Fusszeile />
+<Fusszeile Kontext="@(art is null ? null : $"Lexikon / {art.Name}")" />
 
 @code {
     [Parameter] public string Id { get; set; } = "";

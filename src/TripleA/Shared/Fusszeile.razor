@@ -1,5 +1,13 @@
 @inject DatenService Daten
 
+@if (Veraltet)
+{
+    <div class="karte warnung">
+        Die Daten sind älter als 13 Monate (Stand @meta!.Stand). Vorschriften können sich inzwischen geändert haben.
+        Bitte die offiziellen Quellen prüfen.
+    </div>
+}
+
 <footer class="fusszeile">
     <p>
         Ohne Gewähr. Massgebend sind die offiziellen Vorschriften von Bund und Kanton.
@@ -8,14 +16,50 @@
             <span>Datenstand: @meta.Stand (Version @meta.Version).</span>
         }
     </p>
+    <p>
+        @if (!string.IsNullOrWhiteSpace(meta?.Kontakt))
+        {
+            <a class="fehler-melden" href="@FehlerLink" target="_blank" rel="noopener">Fehler melden</a>
+        }
+        else
+        {
+            <button type="button" class="fehler-melden" @onclick="() => hinweisOffen = !hinweisOffen">Fehler melden</button>
+        }
+    </p>
+    @if (hinweisOffen)
+    {
+        <p class="fehler-hinweis">Diese Funktion ist noch nicht fertig eingerichtet. Bitte melde Fehler vorerst direkt beim Ersteller der App.</p>
+    }
 </footer>
 
 @code {
+    /// <summary>Was gerade angezeigt wird (z.B. "Aargau / Aare"), wird in die Fehlermeldung übernommen.</summary>
+    [Parameter] public string? Kontext { get; set; }
+
     private Meta? meta;
+    private bool hinweisOffen;
 
     protected override async Task OnInitializedAsync()
     {
         try { meta = await Daten.GetMetaAsync(); }
         catch { meta = null; }
+    }
+
+    private bool Veraltet =>
+        meta is not null
+        && DateTime.TryParse(meta.StandIso, System.Globalization.CultureInfo.InvariantCulture,
+                             System.Globalization.DateTimeStyles.None, out var stand)
+        && DateTime.Today > stand.AddMonths(13);
+
+    private string FehlerLink
+    {
+        get
+        {
+            var betreff = "Triple A: Fehler" + (string.IsNullOrWhiteSpace(Kontext) ? "" : $" ({Kontext})");
+            var text = $"Wo: {Kontext ?? "-"}\nDatenstand: {meta?.Stand} (Version {meta?.Version})\n\nWas ist falsch?\n\nRichtige Angabe und Quelle (falls bekannt):\n";
+            if (!string.IsNullOrWhiteSpace(meta?.Kontakt))
+                return $"mailto:{meta.Kontakt}?subject={Uri.EscapeDataString(betreff)}&body={Uri.EscapeDataString(text)}";
+            return "";
+        }
     }
 }
