@@ -5,18 +5,200 @@
   "kantone": [
     "lu"
   ],
-  "zugang": "Patent nach dem Konkordat der Anrainerkantone.",
-  "erfasst": false,
+  "zugang": "Luzerner Patent für den Vierwaldstättersee (mit Schleppfischerei, ohne Horwerbucht) oder Patent für die Horwerbucht (ohne Schleppfischerei). Patent und Vorschriften mitführen. Für das Luzerner Seebecken gilt die Verordnung der Korporation Luzern (separat auswählbar).",
+  "erfasst": true,
   "nurVerweis": false,
   "verweis": null,
-  "hinweise": [],
-  "koederRegeln": [],
-  "artRegeln": [],
+  "hinweise": [
+    {
+      "text": "Fischen verboten: 1. März bis 31. Oktober von 22 bis 4 Uhr, 1. November bis Ende Februar von 20 bis 6 Uhr. Schleppen nur bei Tageslicht. Nachtfischen auf Aal und Trüsche vom öffentlichen Ufer erlaubt.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 20",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "text": "Fangstatistik nach kantonalen Weisungen führen, inkl. Fänge von Gehilfen und Gästen.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 4",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "text": "Kein Fischen in gekennzeichneten Badeanlagen während des Badebetriebs. Schilf- und Binsenbestände nicht betreten oder befahren.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 22 und 23",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "text": "Im Alpnachersee gelten für Felchen 25 cm und für Hecht weder Schonzeit noch Mindestmass.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 18 und 19",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    }
+  ],
+  "koederRegeln": [
+    {
+      "text": "Flug-, Spinn-, Grundangel- und Zapfenfischerei: höchstens zwei Ruten. Hegene: zwei Ruten mit je einer Hegene, höchstens sechs Seitenschnüre mit einfachem Haken. Jucker: eine Rute.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 15 Abs. 1",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "text": "Schleppen: Vereinbarung höchstens 10 Anbissstellen pro Boot, Kanton Luzern höchstens 6, im Luzerner Seebecken (Korporation Luzern) höchstens 5. Boot mit weissem Ball kennzeichnen.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 15",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "text": "Widerhaken nur mit Sachkundenachweis.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 15 Abs. 3",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "text": "Lebende Köderfische verboten; tote Köderfische nur aus dem Vierwaldstättersee.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 12",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "text": "Zum Anlanden nur der Feumer. Echolote mit Live-Sonar dürfen nicht mitgeführt oder verwendet werden.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "text": "Angelgeräte dauernd beaufsichtigen; nur am Maul haken.",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 10 und 16",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    }
+  ],
+  "artRegeln": [
+    {
+      "artId": "bachforelle",
+      "schonmassCm": 35,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-25",
+      "bemerkung": "",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 18 und 19",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "artId": "seeforelle",
+      "schonmassCm": 35,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-25",
+      "bemerkung": "",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 18 und 19",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "artId": "seesaibling",
+      "schonmassCm": 22,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-25",
+      "bemerkung": "Rötel",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 18 und 19",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "artId": "felchen",
+      "schonmassCm": 30,
+      "schonzeitVon": "10-15",
+      "schonzeitBis": "12-25",
+      "bemerkung": "Balchen; Alpnachersee 25 cm; Edelfisch ganzjährig geschont, Albeli 22 cm",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 18 und 19",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "artId": "aesche",
+      "schonmassCm": 30,
+      "schonzeitVon": "02-15",
+      "schonzeitBis": "04-30",
+      "bemerkung": null,
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 18 und 19",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "artId": "hecht",
+      "schonmassCm": 50,
+      "schonzeitVon": "03-15",
+      "schonzeitBis": "04-30",
+      "bemerkung": "Alpnachersee: keine Schonzeit, kein Mindestmass",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 18 und 19",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "artId": "zander",
+      "schonmassCm": 40,
+      "schonzeitVon": "04-15",
+      "schonzeitBis": "05-31",
+      "bemerkung": "",
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 18 und 19",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    },
+    {
+      "artId": "egli",
+      "schonmassCm": 15,
+      "bemerkung": null,
+      "quelle": {
+        "titel": "Vereinbarung Vierwaldstättersee, § 18 und 19",
+        "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+        "stand": "2023-09-01"
+      }
+    }
+  ],
   "quellen": [
     {
-      "titel": "Kantonale Fischereiverordnung Luzern",
-      "url": "https://srl.lu.ch/frontend/versions/427/download_pdf_file?locale=de",
-      "stand": null
+      "titel": "Ausführungsbestimmungen zur Vereinbarung über die Fischerei im Vierwaldstättersee (SRL 724b), Stand 1. September 2023",
+      "url": "https://lu.lexwork.naz.ch/de/dta/724b.pdf",
+      "stand": "2023-09-01"
+    },
+    {
+      "titel": "Fischereiverordnung Kanton Luzern (FiV, SRL 721), Stand 1. Januar 2021",
+      "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+      "stand": "2021-01-01"
     },
     {
       "titel": "Patentausgabestellen Kanton Luzern",

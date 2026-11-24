@@ -2,30 +2,185 @@
   "id": "lu",
   "name": "Luzern",
   "kuerzel": "LU",
-  "system": "Patente für die Seen und für Patentstrecken an Flüssen, übrige Fliessgewässer verpachtet",
-  "zugang": "Patente gibt es bei den Patentausgabestellen des Kantons. Die heute gültigen Patentstrecken an den Flüssen werden noch geprüft.",
-  "erfasst": false,
-  "hinweise": [],
-  "koederRegeln": [],
-  "artRegeln": [],
+  "system": "Patente für Sempachersee, Vierwaldstättersee und die Patentstrecke Untere Reuss; Seebecken und Reuss in der Stadt Luzern mit Patent der Korporation Luzern; übrige Fliessgewässer verpachtet",
+  "zugang": "Patent der Dienststelle Landwirtschaft und Wald (lawa) bzw. der Patentausgabestellen. Für Jahrespatente ist ein Sachkundenachweis (SaNa / Sportfischerbrevet) nötig. Wohnsitz ausserhalb des Kantons: 50 % Zuschlag.",
+  "erfasst": true,
+  "hinweise": [
+    {
+      "text": "Kantonale Patente: Sempachersee (Angeln/Hegene, Schleppen separat), Vierwaldstättersee (ohne bzw. mit Horwerbucht), Patentstrecke Untere Reuss (Tages- und Monatspatente nur vom 1. Januar bis 30. September).",
+      "quelle": {
+        "titel": "FiV LU, § 10",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Nachtfischen ist verboten (eine Stunde nach Sonnenuntergang bis eine Stunde vor Sonnenaufgang). Schleppfischen nur bei Tageslicht.",
+      "quelle": {
+        "titel": "FiV LU, § 14",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Während des Badebetriebs kein Fischen im Umkreis von 100 m vor öffentlichen Badeanlagen.",
+      "quelle": {
+        "titel": "FiV LU, § 15 Abs. 1",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Geschonte oder untermassige Fische sorgfältig zurücksetzen. Angeln mit der Absicht, Fische zurückzusetzen, ist verboten.",
+      "quelle": {
+        "titel": "FiV LU, § 26",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    }
+  ],
+  "koederRegeln": [
+    {
+      "text": "Flug-, Spinn-, Grundangel- und Zapfenfischerei: höchstens zwei Ruten. Hegene: zwei Ruten mit je einer Hegene, höchstens sechs Seitenschnüre mit je einer einfachen Angel. Jucker: eine Rute. Schleppen: sechs Anbissstellen pro Boot.",
+      "quelle": {
+        "titel": "FiV LU, § 18 Abs. 1",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Widerhaken nur mit Sachkundenachweis und nur in stehenden Gewässern; in Fliessgewässern verboten.",
+      "quelle": {
+        "titel": "FiV LU, § 18 Abs. 2",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Lebende Köderfische sind verboten. Tote Köderfische nur aus dem Gewässer, in dem gefischt wird. Köderfischfang nur tagsüber, für den Eigenbedarf, mit Quadratnetz (max. 1 m²) oder Köderflasche.",
+      "quelle": {
+        "titel": "FiV LU, § 23 und 24",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "text": "Erlaubte Hilfsmittel: Feumer und elektronische Geräte zur Fischortung. Nicht genannte Geräte und Methoden sind verboten.",
+      "quelle": {
+        "titel": "FiV LU, § 19 und 20",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    }
+  ],
+  "artRegeln": [
+    {
+      "artId": "bachforelle",
+      "schonmassCm": 22,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "01-31",
+      "bemerkung": "Fliessgewässer; in Seen 35 cm und Schonzeit bis 25.12.",
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "seeforelle",
+      "schonmassCm": 35,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-25",
+      "bemerkung": "stehende Gewässer",
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "seesaibling",
+      "schonmassCm": 22,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-25",
+      "bemerkung": null,
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "aesche",
+      "schonmassCm": 35,
+      "schonzeitVon": "01-01",
+      "schonzeitBis": "09-30",
+      "fangLimiteProTag": 2,
+      "bemerkung": "höchstens 12 pro Jahr",
+      "quelle": {
+        "titel": "FiV LU, § 12, 13 und 13b",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "felchen",
+      "schonmassCm": 25,
+      "schonzeitVon": "11-15",
+      "schonzeitBis": "12-25",
+      "bemerkung": null,
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "zander",
+      "schonzeitVon": "04-01",
+      "schonzeitBis": "05-31",
+      "bemerkung": "in stehenden Gewässern Schonmass 40 cm",
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "egli",
+      "schonmassCm": 15,
+      "bemerkung": null,
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    }
+  ],
   "gewaesserIds": [
     "sempachersee",
     "hallwilersee",
     "vierwaldstaettersee",
-    "kleine-emme",
+    "korporation-seebecken",
+    "korporation-reuss",
     "reuss-lu",
     "pachtreviere-lu"
   ],
   "quellen": [
     {
-      "titel": "Kantonale Fischereiverordnung Luzern",
-      "url": "https://srl.lu.ch/frontend/versions/427/download_pdf_file?locale=de",
-      "stand": null
+      "titel": "Fischereiverordnung Kanton Luzern (FiV, SRL 721), Stand 1. Januar 2021",
+      "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+      "stand": "2021-01-01"
     },
     {
       "titel": "Patentausgabestellen Kanton Luzern",
       "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/vz/vz_fischerei_patentausgabestellen.pdf",
       "stand": null
+    },
+    {
+      "titel": "Verordnung für den Betrieb der Fischenzen der Korporation Luzern, in Kraft seit 1. Januar 2024",
+      "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+      "stand": "2024-01-01"
     }
   ]
 }

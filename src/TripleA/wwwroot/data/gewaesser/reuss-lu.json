@@ -1,21 +1,92 @@
 {
   "id": "reuss-lu",
-  "name": "Reuss (Patentstrecken)",
+  "name": "Reuss (Patentstrecke Untere Reuss)",
   "typ": "Fluss",
   "kantone": [
     "lu"
   ],
-  "zugang": "Kantonales Patent auf den Patentstrecken. Gültige Strecken werden noch geprüft.",
-  "erfasst": false,
+  "zugang": "Patent Untere Reuss (Jahrespatent; Monats- und Tagespatente nur vom 1. Januar bis 30. September).",
+  "erfasst": true,
   "nurVerweis": false,
   "verweis": null,
-  "hinweise": [],
-  "koederRegeln": [],
-  "artRegeln": [],
+  "hinweise": [
+    {
+      "text": "Strecke: beidufrig von der Kantonsgrenze LU/AG flussaufwärts bis zur Einmündung des ehemaligen Reussbühlgrabens bei Ibach.",
+      "quelle": {
+        "titel": "Merkblatt Patentstrecke Untere Reuss (lawa), Stand 1. April 2021",
+        "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/mb/mb_bestimmungen_untere_reuss.pdf",
+        "stand": "2021-04-01"
+      }
+    },
+    {
+      "text": "Fliegenstrecken (nur Fliegenfischerei): vom Zufluss des Rotbachs 300 m flussaufwärts und von der Autobahnüberführung 150 m flussabwärts.",
+      "quelle": {
+        "titel": "Merkblatt Patentstrecke Untere Reuss (lawa), Stand 1. April 2021",
+        "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/mb/mb_bestimmungen_untere_reuss.pdf",
+        "stand": "2021-04-01"
+      }
+    },
+    {
+      "text": "Gefangene Fische sofort in die Fangstatistik eintragen, bevor weitergefischt wird.",
+      "quelle": {
+        "titel": "Merkblatt Patentstrecke Untere Reuss (lawa), Stand 1. April 2021",
+        "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/mb/mb_bestimmungen_untere_reuss.pdf",
+        "stand": "2021-04-01"
+      }
+    }
+  ],
+  "koederRegeln": [
+    {
+      "text": "Spinn-, Grundangel-, Zapfen- und Fliegenfischerei; in den Fliegenstrecken nur Fliegenfischerei mit nassem oder trockenem Köder.",
+      "quelle": {
+        "titel": "Merkblatt Patentstrecke Untere Reuss (lawa), Stand 1. April 2021",
+        "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/mb/mb_bestimmungen_untere_reuss.pdf",
+        "stand": "2021-04-01"
+      }
+    }
+  ],
+  "artRegeln": [
+    {
+      "artId": "bachforelle",
+      "schonmassCm": 27,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "01-31",
+      "fangLimiteProTag": 5,
+      "bemerkung": "",
+      "quelle": {
+        "titel": "Merkblatt Patentstrecke Untere Reuss (lawa), Stand 1. April 2021",
+        "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/mb/mb_bestimmungen_untere_reuss.pdf",
+        "stand": "2021-04-01"
+      }
+    },
+    {
+      "artId": "aesche",
+      "schonmassCm": 35,
+      "schonzeitVon": "01-01",
+      "schonzeitBis": "09-30",
+      "fangLimiteProTag": 2,
+      "bemerkung": "höchstens 12 pro Jahr",
+      "quelle": {
+        "titel": "Merkblatt Patentstrecke Untere Reuss (lawa), Stand 1. April 2021",
+        "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/mb/mb_bestimmungen_untere_reuss.pdf",
+        "stand": "2021-04-01"
+      }
+    }
+  ],
   "quellen": [
     {
-      "titel": "Kantonale Fischereiverordnung Luzern",
-      "url": "https://srl.lu.ch/frontend/versions/427/download_pdf_file?locale=de",
+      "titel": "Merkblatt Patentstrecke Untere Reuss (lawa), Stand 1. April 2021",
+      "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/mb/mb_bestimmungen_untere_reuss.pdf",
+      "stand": "2021-04-01"
+    },
+    {
+      "titel": "Fischereiverordnung Kanton Luzern (FiV, SRL 721), Stand 1. Januar 2021",
+      "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+      "stand": "2021-01-01"
+    },
+    {
+      "titel": "Patentausgabestellen Kanton Luzern",
+      "url": "https://lawa.lu.ch/-/media/LAWA/Dokumente/njf/Fischerei/angelfischerei/vz/vz_fischerei_patentausgabestellen.pdf",
       "stand": null
     }
   ]

@@ -5,18 +5,84 @@
   "kantone": [
     "lu"
   ],
-  "zugang": "Kantonales Patent.",
-  "erfasst": false,
+  "zugang": "Kantonales Patent für Flug-, Spinn-, Grundangel- und Hegenenfischerei (Jahr, Monat, Woche, Tag) oder Jahrespatent Schleppfischerei.",
+  "erfasst": true,
   "nurVerweis": false,
   "verweis": null,
-  "hinweise": [],
+  "hinweise": [
+    {
+      "text": "Über dem «Balchenberg» ist das Fischen vom 15. November bis 15. Januar verboten.",
+      "quelle": {
+        "titel": "FiV LU, § 16 Abs. 2",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    }
+  ],
   "koederRegeln": [],
-  "artRegeln": [],
+  "artRegeln": [
+    {
+      "artId": "bachforelle",
+      "schonmassCm": 35,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-25",
+      "bemerkung": "",
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "seeforelle",
+      "schonmassCm": 35,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-25",
+      "bemerkung": "",
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "hecht",
+      "schonmassCm": 45,
+      "schonzeitVon": "03-15",
+      "schonzeitBis": "04-30",
+      "bemerkung": null,
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "zander",
+      "schonmassCm": 40,
+      "bemerkung": "",
+      "quelle": {
+        "titel": "FiV LU, § 12 und 13",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    },
+    {
+      "artId": "felchen",
+      "fangLimiteProTag": 15,
+      "bemerkung": "Balchen: höchstens 15 pro Tag",
+      "quelle": {
+        "titel": "FiV LU, § 16 Abs. 1",
+        "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+        "stand": "2021-01-01"
+      }
+    }
+  ],
   "quellen": [
     {
-      "titel": "Kantonale Fischereiverordnung Luzern",
-      "url": "https://srl.lu.ch/frontend/versions/427/download_pdf_file?locale=de",
-      "stand": null
+      "titel": "Fischereiverordnung Kanton Luzern (FiV, SRL 721), Stand 1. Januar 2021",
+      "url": "https://lu.lexwork.naz.ch/de/dta/721.pdf",
+      "stand": "2021-01-01"
     },
     {
       "titel": "Patentausgabestellen Kanton Luzern",

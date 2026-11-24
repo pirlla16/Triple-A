@@ -1,0 +1,204 @@
+{
+  "id": "korporation-reuss",
+  "name": "Reuss in der Stadt Luzern (Korporation Luzern)",
+  "typ": "Fluss",
+  "kantone": [
+    "lu"
+  ],
+  "zugang": "Patent der Korporation Luzern (Saison, Quartal, Monat, Woche, Tag; Tages- und Wochenpatente nur vom 1. Mai bis 30. September), ab 12 Jahren mit Sachkundenachweis. Kinder unter 14 dürfen unter Aufsicht mitfischen.",
+  "erfasst": true,
+  "nurVerweis": false,
+  "verweis": null,
+  "hinweise": [
+    {
+      "text": "Gebiet: ab der Seebrücke flussabwärts bis rund 80 m (rechts) bzw. 140 m (links) unterhalb der ehemaligen Fähre Ibach.",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 2",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "text": "Im Januar ist das Fischen verboten.",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 25",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "text": "Waten: 1. Januar bis 30. April verboten, 1. Mai bis 31. Oktober erlaubt, im November und Dezember nur beim Fliegenfischen.",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 27",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "text": "Gesperrt u.a.: Marktbereich, Restaurantufer während des Betriebs, Nadelwehr, St.-Karli-Brücke sowie alle SBB- und Autobahnbrücken.",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 28",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "text": "Jeden Fang sofort in die Fangstatistik eintragen, bevor weitergefischt wird; bei Äsche, Forelle und Hecht mit Zone, Datum, Zeit, Länge und Gewicht. Statistik innert 10 Tagen nach Ablauf zurückgeben.",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 22",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "text": "Untermassige oder geschonte Fische sofort zurücksetzen, ebenso Fische, die nur im Kiemenbereich gehakt sind. Bei geschlucktem Haken die Schnur vor dem Kopf abschneiden.",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 17",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "text": "Aal, Nase, Edelfisch und alle Krebse sind ganzjährig geschont.",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 17 Abs. 5",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    }
+  ],
+  "koederRegeln": [
+    {
+      "text": "Flug-, Spinn-, Grund- oder Zapfenfischerei mit nur einer Rute, Haken ohne Widerhaken.",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 26 Abs. 1 und 2, § 26 Abs. 4",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "text": "Lebende Köderfische und Anfüttern verboten. Teig verboten (ausser Brot).",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 16, 23 und 26 Abs. 4",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "text": "Zum Anlanden ist der Feumer erlaubt.",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 26 Abs. 3",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    }
+  ],
+  "artRegeln": [
+    {
+      "artId": "aesche",
+      "schonmassCm": 35,
+      "schonzeitVon": "01-01",
+      "schonzeitBis": "09-30",
+      "fangLimiteProTag": 2,
+      "bemerkung": "Saisonpatent höchstens 12",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 18–20",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "artId": "felchen",
+      "schonmassCm": 30,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-25",
+      "fangLimiteProTag": 25,
+      "bemerkung": "Edelfisch ganzjährig geschont; Albeli 22 cm",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 18–20",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "artId": "bachforelle",
+      "schonmassCm": 27,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "01-31",
+      "fangLimiteProTag": 5,
+      "bemerkung": "Saisonpatent höchstens 40",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 18–20",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "artId": "seeforelle",
+      "schonmassCm": 27,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "01-31",
+      "fangLimiteProTag": 5,
+      "bemerkung": "Saisonpatent höchstens 40",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 18–20",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "artId": "hecht",
+      "schonmassCm": 50,
+      "schonzeitVon": "03-15",
+      "schonzeitBis": "04-30",
+      "fangLimiteProTag": 5,
+      "bemerkung": "Saisonpatent höchstens 40",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 18–20",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "artId": "seesaibling",
+      "schonmassCm": 22,
+      "schonzeitVon": "10-01",
+      "schonzeitBis": "12-25",
+      "bemerkung": "Rötel",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 18–20",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "artId": "zander",
+      "schonmassCm": 40,
+      "schonzeitVon": "04-15",
+      "schonzeitBis": "05-31",
+      "bemerkung": "",
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 18–20",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    },
+    {
+      "artId": "egli",
+      "schonmassCm": 15,
+      "bemerkung": null,
+      "quelle": {
+        "titel": "Verordnung Korporation Luzern, § 18–20",
+        "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+        "stand": "2024-01-01"
+      }
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Verordnung für den Betrieb der Fischenzen der Korporation Luzern, in Kraft seit 1. Januar 2024",
+      "url": "https://www.korporationluzern.ch/site/assets/files/1069/fischerei_verordnung_a6_2024.pdf",
+      "stand": "2024-01-01"
+    }
+  ]
+}
